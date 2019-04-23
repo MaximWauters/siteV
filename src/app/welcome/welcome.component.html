@@ -1,0 +1,27 @@
+<br>
+<br>
+<br><br>
+<div class="wrap">
+  <div class="cube" >
+    <links>
+      <div [routerLinkActive]="['active']" class="front">
+        <a [routerLink]="['/about']" > <!-- sluit a tag hier voor niet aanklikbaar -->
+        <img src="assets/k3.jpg" width="400px" height="403px"></a>
+      </div>
+      <div class="back">
+        <a [routerLink]="['/about']" >
+        <img src="assets/k2.jpg" width="400px" height="403px"></a>
+      </div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <div [routerLinkActive]="['active']" class="left">
+        <a [routerLink]="['/about']" >
+        <img class="afbe" src="assets/wa.png" width="400px" height="403px"></a>
+      </div>
+      <div [routerLinkActive]="['active']" class="right">
+        <a [routerLink]="['/about']" >
+        <img src="assets/k1.jpg" width="400px" height="403px"></a>
+      </div> 
+    </links>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div>
+  <a [routerLink]="['/about']" >
+  <img class="logo" src="assets/logo.png" width="150px" height="150px"></a>
+  </div>
+  <div class="container">
+      <div class="row">
+    
+        <div class="col">
+            <p>
+               REGISTREER JE LIJF
+            </p>
+            <mdb-card>
+  
+              <mdb-card-header class="info-color black-text text-center py-4">
+                <h5>
+                  <strong></strong>
+                </h5>
+              </mdb-card-header>
+            
+              <mdb-card-body class="px-lg-5 pt-0">
+            
+                <form class="text-center" style="color: #757575;" action="/vin" method="POST" >
+            
+                  <div class="md-form mt-3">
+                      <br>
+                    <input type="text" name="name" (keyup)="KeyUp($event)" formControlName="contactFormName" id="materialContactFormName" class="form-control"
+                      mdbInputDirective>
+                    <label for="materialContactFormName">NAAM</label>
+                  </div>
+  
+                  <div class="md-form mt-3">
+                      <br>
+                    <input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
+                      mdbInputDirective>
+                    <label for="materialContactFormName">POSTCODE</label>
+                  </div>
+            
+                  <div class="md-form">
+                      <br>
+                    <input type="email" name="email" formControlName="contactFormEmail" id="materialContactFormEmail" class="form-control"
+                      mdbInputDirective>
+                    <label for="materialContactFormEmail">E-MAIL</label>
+                  </div>
+  
+                  <div class="md-form mt-3">
+                      <br>
+                    <input type="text" formControlName="contactFormName" id="materialContactFormName" class="form-control"
+                      mdbInputDirective>
+                    <label for="materialContactFormName">ONDERWERP</label>
+                  </div>
+  
+                  <div class="md-form mt-3">
+                      <br>
+                      <textarea type="text" name="message" formControlName="contactFormMessage" id="materialContactFormMessage" class="form-control md-textarea"
+                      mdbInputDirective></textarea>
+                    <label for="materialContactFormName">VERTEL ONS JE VERHAAL</label>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-md-6 mx-auto d-flex justify-content-center">
+                      <mdb-checkbox formControlName="contactFormCopy"></mdb-checkbox>
+                    </div>
+                  </div>
+            
+                  <button mdbBtn name="submit"  color="info" outline="true" rounded="true" block="true" class="z-depth-0 my-4 waves-effect"
+                    mdbWavesEffect type="submit" >SEND</button>
+            
+               </form>  
+                <br><br><br><br><br><br><br><br>
+                <br><br>
+              
+                <form method="POST" action="https://formspree.io/wauters.maxim@hotmail.com">
+                  <input type="email" name="email" placeholder="Your email">
+                  <textarea name="message" placeholder="Test Message"></textarea>
+                  <button type="submit">Send Test</button>
+                </form>
+            
+              </mdb-card-body>
+            
+            </mdb-card>
+        
+       </div> 
+    
+      </div>
+  </div>
+  
+  
+  
+  
+  
